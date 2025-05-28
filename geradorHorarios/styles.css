@@ -1,25 +1,60 @@
 body {
-    font-family: Arial;
-    padding: 20px;
-  }
-  
-  table {
-    border-collapse: collapse;
-    margin-bottom: 40px;
-    width: 100%;
-  }
-  
-  th, td {
-    border: 1px solid #ccc;
-    padding: 4px 8px;
-    text-align: center;
-  }
-  
-  .conflict {
-    background-color: #f88;
-  }
-  
-  h2 {
-    margin-top: 40px;
-  }
-  
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.config {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.config label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.result {
+  flex: 1;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 6px;
+  text-align: center;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+}
+
+thead tr:first-child th {
+  background-color: #cfe2ff;
+  color: black;
+}
+
+.conflict {
+  background-color: #ffcccc;
+}

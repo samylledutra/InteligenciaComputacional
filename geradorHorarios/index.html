@@ -2,14 +2,27 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Grades Horárias</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Horários </title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  
 
-<h1>Grades Horárias</h1>
-<div id="grades-container"></div>
+  <div class="container">
+    <div class="config">
+      <h3>Configurações</h3>
+      <label>População: <input type="number" id="popSize" value="50"></label>
+      <label>Gerações: <input type="number" id="maxGen" value="100"></label>
+      <label>Prob. Cruzamento: <input type="number" step="0.1" id="pc" value="0.7"></label>
+      <label>Prob. Mutação: <input type="number" step="0.1" id="pm" value="0.1"></label>
+      <label>Número de Cortes: <input type="number" id="numCortes" value="2"></label>
+      <button id="runBtn">Executar</button>
+    </div>
 
-<script src="script.js"></script>
+    <div id="result" class="result"></div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

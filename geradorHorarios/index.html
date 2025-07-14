@@ -8,20 +8,37 @@
 </head>
 <body>
   
-
-  <div class="container">
+<div class="container">
     <div class="config">
-      <h3>Configurações</h3>
-      <label>População: <input type="number" id="popSize" value="50"></label>
-      <label>Gerações: <input type="number" id="maxGen" value="100"></label>
-      <label>Prob. Cruzamento: <input type="number" step="0.1" id="pc" value="0.7"></label>
-      <label>Prob. Mutação: <input type="number" step="0.1" id="pm" value="0.1"></label>
-      <label>Número de Cortes: <input type="number" id="numCortes" value="2"></label>
-      <button id="runBtn">Executar</button>
+      <h3>Configurações do Algoritmo Genético</h3>
+      <label for="popSize">População:</label>
+      <input type="number" id="popSize" value="50">
+      
+      <label for="maxGen">Gerações:</label>
+      <input type="number" id="maxGen" value="100">
+      
+      <label for="pc">Prob. Cruzamento:</label>
+      <input type="number" step="0.1" id="pc" value="0.7">
+      
+      <label for="pm">Prob. Mutação:</label>
+      <input type="number" step="0.1" id="pm" value="0.1">
+      
+      <label for="numCortes">Número de Cortes:</label>
+      <input type="number" id="numCortes" value="2">
+      
+      <button id="runBtn">Executar AG</button>
     </div>
 
-    <div id="result" class="result"></div>
+    <div class="result-container">
+      <h3>Melhor Horário Encontrado</h3>
+      <p id="info-melhor">Conflitos do melhor horário: N/A</p>
+      <div id="result">
+        <p>Aguardando execução do Algoritmo Genético...</p>
+      </div>
+
+      </div>
   </div>
+
 
   <script src="script.js"></script>
 </body>

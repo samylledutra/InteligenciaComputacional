@@ -1,101 +1,119 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f4f4f4;
+}
 
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-      background-color: #f4f4f4;
-    }
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-    .config {
-      flex: 1;
-      min-width: 280px;
-      padding: 20px;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      background-color: #f9f9f9;
-    }
-    .config h3 {
-      margin-top: 0;
-      color: #333;
-    }
-    .config label {
-      display: block;
-      margin-bottom: 10px;
-      color: #555;
-    }
-    .config input[type="number"] {
-      width: calc(100% - 100px); 
-      padding: 8px;
-      margin-left: 5px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    .config button {
-      background-color: #007bff;
-      color: white;
-      padding: 10px 15px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 16px;
-      margin-top: 20px;
-    }
-    .config button:hover {
-      background-color: #0056b3;
-    }
-    .result-container {
-      flex: 2;
-      min-width: 600px;
-      padding: 20px;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      background-color: #f9f9f9;
-      overflow-x: auto; 
-    }
-    #info-melhor {
-      margin-bottom: 15px;
-      font-weight: bold;
-      color: #333;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 20px; 
-      background-color: #fff;
-    }
-    table caption {
-      font-weight: bold;
-      margin-bottom: 10px;
-      font-size: 1.1em;
-      color: #007bff;
-    }
-    table, th, td {
-      border: 1px solid #ddd;
-    }
-    th, td {
-      padding: 8px;
-      text-align: center;
-      min-width: 80px; 
-    }
-    th {
-      background-color: #e9ecef;
-      color: #333;
-    }
-    .conflict {
-      background-color: #ffcccc; 
-      color: #cc0000;
-      font-weight: bold;
-    }
-    .empty-slot {
-      background-color: #f0f0f0; 
-      color: #aaa;
-    }
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.config {
+  flex: 1;
+  min-width: 280px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.config h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.config label {
+  display: block;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.config input[type="number"] {
+  width: calc(100% - 100px);
+  padding: 8px;
+  margin-left: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.config button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.config button:hover {
+  background-color: #0056b3;
+}
+
+.result-container {
+  flex: 2;
+  min-width: 600px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  overflow-x: auto;
+}
+
+#info-melhor {
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+table caption {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  color: #007bff;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: center;
+  min-width: 80px;
+}
+
+th {
+  background-color: #e9ecef;
+  color: #333;
+}
+
+.conflict {
+  background-color: #ffcccc;
+  color: #cc0000;
+  font-weight: bold;
+}
+
+.empty-slot {
+  background-color: #f0f0f0;
+  color: #aaa;
+}

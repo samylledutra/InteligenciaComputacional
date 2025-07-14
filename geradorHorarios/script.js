@@ -345,7 +345,7 @@ function executarAG() {
 
   
   if (totalPopulacao <= 0 || maxGeracoes <= 0 || pc <= 0 || pc > 1 || pm <= 0 || pm > 1) {
-    alert("Parâmetros Inválidos, insira-os novamente!");
+    alert("Parâmetros Inválidos, insira-os novamentes!");
     return;
   }
 
